@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidUtils</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_inter_face">InterFaceActivity</string>
+    <string name="my_widget_circle">my_widget_circle</string>
+    <string name="title_activity_my_widget">MyWidgetActivity</string>
+    <string name="title_activity_surface_view_player">SurfaceViewPlayerActivity</string>
+    <string name="surface_view_player">SurfaceViewPlayer</string>
+    <string name="title_activity_vedio_view_player">VedioViewPlayerActivity</string>
+    <string name="video_view_player">VideoViewPlayer</string>
+    <string name="default_video_player">default_video_player</string>
+</resources>
