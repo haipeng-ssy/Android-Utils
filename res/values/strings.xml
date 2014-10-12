@@ -13,4 +13,6 @@
     <string name="title_activity_vedio_view_player">VedioViewPlayerActivity</string>
     <string name="video_view_player">VideoViewPlayer</string>
     <string name="default_video_player">default_video_player</string>
+    <string name="title_activity_canvas_with_bitmap">CanvasWithBitmapActivity</string>
+    <string name="canvas_bitmap_btn">canvas_bitmap_btn</string>
 </resources>

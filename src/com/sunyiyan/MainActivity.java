@@ -12,8 +12,8 @@ import android.widget.Button;
 
 public class MainActivity extends BaseActivity implements OnClickListener{
 
-	private Button button,my_widget_circle_btn,surface_view_player,video_view_player;
-	
+	private Button button,my_widget_circle_btn,surface_view_player,video_view_player,
+	canvas_bitmap_btn;
     Intent intent=null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +24,14 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		my_widget_circle_btn=(Button) findViewById(R.id.my_widget_circle);
 		surface_view_player =(Button) findViewById(R.id.surface_view_player);
 		video_view_player = (Button) findViewById(R.id.video_view_player_btn);
+		canvas_bitmap_btn = (Button)findViewById(R.id.canvas_bitmap_btn);
 		
 		button.setOnClickListener(this);
 		my_widget_circle_btn.setOnClickListener(this);
 		surface_view_player.setOnClickListener(this);
 	    video_view_player.setOnClickListener(this);
+	    canvas_bitmap_btn.setOnClickListener(this);
+	    
 	}
     
 	@Override
@@ -53,6 +56,9 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 			break;
 		case R.id.video_view_player_btn:
 			startYourActivity(VideoViewPlayerActivity.class);
+			break;
+		case R.id.canvas_bitmap_btn:
+			startYourActivity(CanvasWithBitmapActivity.class);
 			break;
 		default:
 			break;
