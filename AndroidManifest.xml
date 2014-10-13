@@ -47,6 +47,10 @@
             android:name="com.sunyiyan.CanvasWithBitmapActivity"
             android:label="@string/title_activity_canvas_with_bitmap" >
         </activity>
+        <activity
+            android:name="com.sunyiyan.sensor.WifiActivity"
+            android:label="@string/title_activity_wifi" >
+        </activity>
     </application>
 
 </manifest>
