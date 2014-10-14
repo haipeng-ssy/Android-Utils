@@ -213,5 +213,37 @@ import android.view.Menu;
 			mWifiManager.disconnect();
 		}
 	}
+	
+	/**
+	 * 1.ScanResult
+
+  主要用来描述已经检测出的接入点，包括接入点的地址，接入点的名称，身份认证，频率，信号强度等信息。
+
+2.WifiConfiguration
+
+ Wifi网络的配置，包括安全设置等。
+
+3.WifiInfo
+
+ wifi无线连接的描述，包括接入点，网络连接状态，隐藏的接入点，IP地址，连接速度，MAC地址，网络ID，信号强度等信息。这里简单介绍一下这里的方法:
+
+       getBSSID() 获取BSSID
+
+       getDetailedStateOf() 获取客户端的连通性
+
+       getHiddenSSID() 获得SSID 是否被隐藏
+
+       getIpAddress() 获取IP 地址
+
+       getLinkSpeed() 获得连接的速度
+
+       getMacAddress() 获得Mac 地址
+
+       getRssi() 获得802.11n 网络的信号
+
+       getSSID() 获得SSID
+
+       getSupplicanState() 返回具体客户端状态的信息
+	 * */
 
 }
