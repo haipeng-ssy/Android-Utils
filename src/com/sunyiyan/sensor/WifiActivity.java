@@ -41,7 +41,7 @@ import android.view.Menu;
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.main);
+	        setContentView(R.layout.activity_wifi);
 	        mWifiAdmin = new WifiAdmin(WifiActivity.this);  
 	        init();  
 	    }
@@ -101,7 +101,7 @@ import android.view.Menu;
 	    		allNetWork.setText("扫描到的wifi网络：\n"+sb.toString());
 	    	}
 	    }
-	}
+	
 	
 
 	public class WifiAdmin {
