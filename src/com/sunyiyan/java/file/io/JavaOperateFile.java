@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * @author sunyiyan
  * 操作文件流
  * */
-public class JavaOperateFile {
+public class JavaOperateFile   {
 	/**
 	 * 把一个文件里的字符串全部读出来，并以字符串形式抛出
 	 * */
