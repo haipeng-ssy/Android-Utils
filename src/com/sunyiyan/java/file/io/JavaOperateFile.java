@@ -1,10 +1,13 @@
 package com.sunyiyan.java.file.io;
 
 import java.io.BufferedReader;
+import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 /**
  * @author sunyiyan
  * 操作文件流
@@ -73,6 +76,34 @@ public class JavaOperateFile   {
 			e.printStackTrace();
 		}
 	}
+	
+	 public static void copyStream(InputStream is, OutputStream os) {
+	        final int BUFFER_SIZE = 1024 * 8;
+	        byte[] buffer = new byte[BUFFER_SIZE];
+	        try {
+	            for (;;) {
+	                int count = is.read(buffer, 0, BUFFER_SIZE);
+	                if (count < 0)
+	                    break;
+	                os.write(buffer, 0, count);
+	            }
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        } finally {
+	            closeStream(is);
+	            closeStream(os);
+	        }
+	    }
+	 
+	 public static void closeStream(Closeable stream) {
+	        try {
+	            if (stream != null) {
+	                stream.close();
+	            }
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
 	
 		 
 }
