@@ -1,4 +1,8 @@
-package com.sunyiyan;
+package com.sunyiyan.sensor;
+
+import com.sunyiyan.R;
+import com.sunyiyan.R.layout;
+import com.sunyiyan.R.menu;
 
 import android.os.Bundle;
 import android.app.Activity;

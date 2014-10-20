@@ -14,7 +14,7 @@ import android.widget.Button;
 public class MainActivity extends BaseActivity implements OnClickListener{
 
 	private Button button,my_widget_circle_btn,surface_view_player,video_view_player,
-	canvas_bitmap_btn,wifi_btn;
+	canvas_bitmap_btn,wifi_btn,rect_btn;
 	
     Intent intent=null;
 	@Override
@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		video_view_player = (Button) findViewById(R.id.video_view_player_btn);
 		canvas_bitmap_btn = (Button)findViewById(R.id.canvas_bitmap_btn);
 		wifi_btn = (Button)findViewById(R.id.wifi_btn);
+		rect_btn = (Button)findViewById(R.id.rect_btn);
 		
 		button.setOnClickListener(this);
 		my_widget_circle_btn.setOnClickListener(this);
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 	    video_view_player.setOnClickListener(this);
 	    canvas_bitmap_btn.setOnClickListener(this);
 	    wifi_btn.setOnClickListener(this);
+	    rect_btn.setOnClickListener(this);
 	    
 	}
     
@@ -66,6 +68,9 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 			break;
 		case R.id.wifi_btn:
 			startYourActivity(WifiActivity.class);
+			break;
+		case R.id.rect_btn:
+			startYourActivity(CanvasAnimationRectA.class);
 			break;
 		default:
 			break;

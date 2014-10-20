@@ -57,8 +57,12 @@
             android:label="@string/title_activity_wifi" >
         </activity>
         <activity
-            android:name="com.sunyiyan.WifiP2PActivity"
+            android:name="com.sunyiyan.sensor.WifiP2PActivity"
             android:label="@string/title_activity_wifi_p2_p" >
+        </activity>
+        <activity
+            android:name="com.sunyiyan.CanvasAnimationRectA"
+            android:label="@string/title_activity_canvas_animation_rect" >
         </activity>
     </application>
 

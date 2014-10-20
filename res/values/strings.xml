@@ -17,5 +17,6 @@
     <string name="canvas_bitmap_btn">canvas_bitmap_btn</string>
     <string name="title_activity_wifi">WifiActivity</string>
     <string name="title_activity_wifi_p2_p">WifiP2PActivity</string>
+    <string name="title_activity_canvas_animation_rect">CanvasAnimationRectA</string>
 
 </resources>
