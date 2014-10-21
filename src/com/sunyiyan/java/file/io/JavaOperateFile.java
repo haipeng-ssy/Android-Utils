@@ -15,6 +15,7 @@ import java.io.OutputStream;
 public class JavaOperateFile   {
 	/**
 	 * 把一个文件里的字符串全部读出来，并以字符串形式抛出
+	 * inputstream->string
 	 * */
 	public static String readFile(File file){  
 		 if(null == file ) return null;  
@@ -30,6 +31,9 @@ public class JavaOperateFile   {
 			  * */
 			 BufferedReader fileReader = 
 					 new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));  
+			 // InputStream is = new FileInputStream(file);
+			 // InputStreamReader isReader = new InputStreamReader(is,"UTF-8");
+			 //BufferedReader fileReader = new BufferedReader(isReader);
 			 String line = fileReader.readLine();  
 			 
 			/**
@@ -52,6 +56,39 @@ public class JavaOperateFile   {
 				 } 
 		 return stringBuffer.toString(); 
 		 }
+	
+	/** 
+	 * 先读后写，从输入流到输出流，instream->outs->写到本地
+    * 复制单个文件 
+    * @param oldPath String 原文件路径 如：c:/fqf.txt 
+    * @param newPath String 复制后路径 如：f:/fqf.txt 
+    * @return boolean 
+    */ 
+  public void copyFile(String oldPath, String newPath) { 
+      try { 
+          int bytesum = 0; 
+          int byteread = 0; 
+          File oldfile = new File(oldPath); 
+          if (oldfile.exists()) { //文件存在时 
+              InputStream inStream = new FileInputStream(oldPath); //读入原文件 
+              FileOutputStream fs = new FileOutputStream(newPath); 
+              byte[] buffer = new byte[1444]; 
+              int length; 
+              while ( (byteread = inStream.read(buffer)) != -1) { 
+                  bytesum += byteread; //字节数 文件大小 
+                  System.out.println(bytesum); 
+                  fs.write(buffer, 0, byteread); 
+              } 
+              inStream.close(); 
+          } 
+      } 
+      catch (Exception e) { 
+          System.out.println("复制单个文件操作出错"); 
+          e.printStackTrace(); 
+
+      } 
+
+  } 
 	public void writeFile(){
 		 File file=new File("C:"+File.separator+"test.txt");
         FileOutputStream fos=null;
