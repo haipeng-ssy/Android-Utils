@@ -6,6 +6,7 @@ import com.sunyiyan.sensor.WifiActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,6 +30,13 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		canvas_bitmap_btn = (Button)findViewById(R.id.canvas_bitmap_btn);
 		wifi_btn = (Button)findViewById(R.id.wifi_btn);
 		rect_btn = (Button)findViewById(R.id.rect_btn);
+		
+		button.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/DINOT-Regular.otf"));
+		my_widget_circle_btn.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf"));
+		surface_view_player.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Roboto-Bold.ttf"));
+		canvas_bitmap_btn.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light-Italic.ttf"));
+		wifi_btn.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Roboto-Medium.ttf"));
+		rect_btn.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Roboto-Regular.ttf"));
 		
 		button.setOnClickListener(this);
 		my_widget_circle_btn.setOnClickListener(this);
