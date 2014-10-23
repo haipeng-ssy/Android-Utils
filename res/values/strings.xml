@@ -6,17 +6,21 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_inter_face">InterFaceActivity</string>
-    <string name="my_widget_circle">my_widget_circle</string>
     <string name="title_activity_my_widget">MyWidgetActivity</string>
     <string name="title_activity_surface_view_player">SurfaceViewPlayerActivity</string>
-    <string name="surface_view_player">SurfaceViewPlayer</string>
     <string name="title_activity_vedio_view_player">VedioViewPlayerActivity</string>
-    <string name="video_view_player">VideoViewPlayer</string>
-    <string name="default_video_player">default_video_player</string>
     <string name="title_activity_canvas_with_bitmap">CanvasWithBitmapActivity</string>
-    <string name="canvas_bitmap_btn">canvas_bitmap_btn</string>
     <string name="title_activity_wifi">WifiActivity</string>
     <string name="title_activity_wifi_p2_p">WifiP2PActivity</string>
     <string name="title_activity_canvas_animation_rect">CanvasAnimationRectA</string>
+    <string name="title_activity_my_flower">MyFlowerActivity</string>
+    <string-array name="main_activity_button_text">
+        <item>my_widget_circle</item>
+        <item>VideoViewPlayer</item>
+        <item>canvas_bitmap_btn</item>
+        <item>SurfaceViewPlayer</item>
+        <item>wifi_btn</item>
+        <item>rect_btn</item>
+    </string-array>
 
 </resources>

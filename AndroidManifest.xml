@@ -64,6 +64,10 @@
             android:name="com.sunyiyan.CanvasAnimationRectA"
             android:label="@string/title_activity_canvas_animation_rect" >
         </activity>
+        <activity
+            android:name="com.sunyiyan.MyFlowerActivity"
+            android:label="@string/title_activity_my_flower" >
+        </activity>
     </application>
 
 </manifest>
