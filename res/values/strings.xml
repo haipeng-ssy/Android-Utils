@@ -21,6 +21,7 @@
         <item>SurfaceViewPlayer</item>
         <item>wifi_btn</item>
         <item>rect_btn</item>
+        <item>MyFlowerActivity</item>
     </string-array>
 
 </resources>

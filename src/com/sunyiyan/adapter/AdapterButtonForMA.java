@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.content.DialogInterface.OnClickListener;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 
+import com.sunyiyan.MainActivity;
 import com.sunyiyan.R;
 import com.sunyiyan.base.BaseActivity;
 
@@ -59,6 +61,7 @@ public class AdapterButtonForMA extends BaseAdapter {
 		}
 		viewHolder.mButton.setText(mList.get(position));
 		viewHolder.mButton.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/Roboto-Light.ttf"));
+		viewHolder.mButton.setOnClickListener((android.view.View.OnClickListener)mContext);
 		return convertView;
 	}
 

@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends BaseActivity implements OnClickListener {
 
@@ -73,6 +74,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			class1 = WifiActivity.class;
 		} else if (text.equals("rect_btn")) {
 			class1 = CanvasAnimationRectA.class;
+		} else if (text.equals("MyFlowerActivity"))
+		{
+			class1 = MyFlowerActivity.class;
 		}
 		return class1;
 	}
@@ -87,7 +91,11 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-
+//		Button button = (Button) findViewById(R.id.btn_for_ma);
+		Button btn= (Button) v;
+		String text = (String) btn.getText();
+		startYourActivity(getActivityClass(text));
+//		finish();
 	}
 
 	// 跳转到指定的activity
