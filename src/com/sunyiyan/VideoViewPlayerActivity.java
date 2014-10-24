@@ -52,4 +52,16 @@ public class VideoViewPlayerActivity extends BaseActivity {
 		return true;
 	}
 
+	@Override
+	public void setMyContentView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

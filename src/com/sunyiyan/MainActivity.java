@@ -8,9 +8,7 @@ import com.sunyiyan.base.BaseActivity;
 import com.sunyiyan.sensor.WifiActivity;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,18 +16,36 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends BaseActivity implements OnClickListener {
 
 	private ListView mListView = null;
 	AdapterButtonForMA mAdapterButtonForMA;
 	Intent intent = null;
-
+    
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+	}
+
+	@Override
+	public void setMyContentView() {
+		// TODO Auto-generated method stub
 		setContentView(R.layout.activity_main);
+	}
+	
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		getWallpaper();
+//		getActionBar();
+//		actionBar=getSupportActionBar();
+//		actionBar.setDisplayHomeAsUpEnabled(true);
+		
+	    
+		
 		mListView = (ListView) findViewById(R.id.listView_mainActivity);
 
 		mAdapterButtonForMA = new AdapterButtonForMA(this, getList());
@@ -48,7 +64,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			}
 		});
 
+
 	}
+	
 
 	public List<String> getList() {
 		List<String> mList = new ArrayList<String>();
@@ -103,5 +121,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		intent = new Intent(this, yourActivity);
 		startActivity(intent);
 	}
+
+	
+
+
+	
 
 }

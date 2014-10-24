@@ -1,11 +1,22 @@
 package com.sunyiyan.base;
 
+
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
-public class BaseActivity extends ActionBarActivity {
+public abstract class BaseActivity extends Activity {
 
+	public abstract void setMyContentView();
+	public abstract void initView();
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setMyContentView();
+		initView();
+	}
+	
+ 
 	
 	
     

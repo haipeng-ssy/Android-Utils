@@ -107,6 +107,18 @@ public class SurfaceViewPlayerActivity extends BaseActivity implements SurfaceHo
 		}
 		player.release();
 	}
+
+	@Override
+	public void setMyContentView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
