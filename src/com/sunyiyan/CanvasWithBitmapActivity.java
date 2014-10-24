@@ -8,8 +8,9 @@ import android.view.Menu;
 import android.widget.ImageView;
 
 import com.sunyiyan.R;
+import com.sunyiyan.base.BaseActivity;
 import com.sunyiyan.utils.ImageHelper;
-public class CanvasWithBitmapActivity extends Activity {
+public class CanvasWithBitmapActivity extends BaseActivity {
     private ImageView canvasbitmaptobitmap;
     
 	@Override

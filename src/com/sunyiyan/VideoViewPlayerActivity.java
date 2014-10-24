@@ -1,5 +1,7 @@
 package com.sunyiyan;
 
+import com.sunyiyan.base.BaseActivity;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -12,7 +14,7 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class VideoViewPlayerActivity extends Activity {
+public class VideoViewPlayerActivity extends BaseActivity {
 
 	private Button default_video_player;
 	private VideoView videoView;

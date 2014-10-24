@@ -1,12 +1,13 @@
 package com.sunyiyan;
 
+import com.sunyiyan.base.BaseActivity;
 import com.sunyiyan.widget.FlowerChild;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class MyFlowerActivity extends Activity {
+public class MyFlowerActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

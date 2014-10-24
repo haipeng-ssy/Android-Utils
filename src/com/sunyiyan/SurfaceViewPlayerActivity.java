@@ -1,5 +1,7 @@
 package com.sunyiyan;
 
+import com.sunyiyan.base.BaseActivity;
+
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class SurfaceViewPlayerActivity extends Activity implements SurfaceHolder.Callback {
+public class SurfaceViewPlayerActivity extends BaseActivity implements SurfaceHolder.Callback {
 
 	MediaPlayer player;
 	SurfaceView surface;

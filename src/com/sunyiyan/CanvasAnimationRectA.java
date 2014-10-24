@@ -1,10 +1,12 @@
 package com.sunyiyan;
 
+import com.sunyiyan.base.BaseActivity;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class CanvasAnimationRectA extends Activity {
+public class CanvasAnimationRectA extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

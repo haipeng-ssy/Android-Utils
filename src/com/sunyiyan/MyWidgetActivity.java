@@ -1,6 +1,7 @@
 package com.sunyiyan;
 
 import com.sunyiyan.application.MyApplication;
+import com.sunyiyan.base.BaseActivity;
 import com.sunyiyan.widget.DrawView;
 
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.view.Menu;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
-public class MyWidgetActivity extends Activity {
+public class MyWidgetActivity extends BaseActivity {
 
 	int i=0;
 	LinearLayout ll;
