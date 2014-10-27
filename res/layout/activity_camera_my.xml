@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraMyActivity" 
+    android:gravity="center_horizontal">
+
+    <SurfaceView 
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+   <TextView 
+       android:id="@+id/has_focus_text"
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:text="已经聚焦"
+       android:visibility="invisible"
+       android:layout_marginTop="10dp"/>
+    
+   <Button 
+       android:id="@+id/take_picture"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="拍照"
+       android:layout_alignParentBottom="true"/>
+   <Button 
+       android:id="@+id/take_video"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="摄像"
+       android:layout_toRightOf="@+id/take_picture"
+       android:layout_alignParentBottom="true"/>
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  </RelativeLayout>

@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.sunyiyan.adapter.AdapterButtonForMA;
 import com.sunyiyan.base.BaseActivity;
+import com.sunyiyan.sensor.CameraActivity;
+import com.sunyiyan.sensor.CameraMyActivity;
 import com.sunyiyan.sensor.WifiActivity;
 
 import android.os.Bundle;
@@ -95,6 +97,12 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		} else if (text.equals("MyFlowerActivity"))
 		{
 			class1 = MyFlowerActivity.class;
+		}else if (text.equals("CameraActivity"))
+		{
+			class1 = CameraActivity.class;
+		}else if (text.equals("CameraMyActivity"))
+		{
+			class1 = CameraMyActivity.class;
 		}
 		return class1;
 	}

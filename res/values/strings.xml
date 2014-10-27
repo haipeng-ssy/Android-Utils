@@ -14,6 +14,7 @@
     <string name="title_activity_wifi_p2_p">WifiP2PActivity</string>
     <string name="title_activity_canvas_animation_rect">CanvasAnimationRectA</string>
     <string name="title_activity_my_flower">MyFlowerActivity</string>
+
     <string-array name="main_activity_button_text">
         <item>my_widget_circle</item>
         <item>VideoViewPlayer</item>
@@ -22,6 +23,11 @@
         <item>wifi_btn</item>
         <item>rect_btn</item>
         <item>MyFlowerActivity</item>
+        <item>CameraActivity</item>
+        <item>CameraMyActivity</item>
     </string-array>
+
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_camera_my">CameraMyActivity</string>
 
 </resources>
